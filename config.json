@@ -1,0 +1,87 @@
+{
+    "aladin": {
+        "[docstring]": "Settings required when using ALADIN",
+        "guess": {
+            "[docstring]": "Guessed values to initialize the algorithm",
+            "z": [
+                [1,2,3],
+                [4,5,5],
+                [5,6,6],
+                [6,7,7]
+            ],
+            "λ": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "para": {
+            "[docstring]": "ALADIN numerical parameters.",
+            "ρ": 0,
+            "H": [
+                [
+                    [1,0],
+                    [0,1]
+                ],
+                [
+                    [1,0],
+                    [0,1]
+                ],
+                [
+                    [1,0],
+                    [0,1]
+                ],
+                [
+                    [1,0],
+                    [0,1]
+                ]
+            ]
+        },
+        "config": {
+            "[docstring]": "ALADIN running configurations.",
+            "max_iter": 50,
+            "tol": 1e-8,
+            "copied_gap": 1e-6
+        }
+    },
+    "sampling": {
+        "[docstring]": "Sampling accuracy.",
+        "N1": 8,
+        "N2": 3
+    },
+    "performance": {
+        "[docstring]": "Parallel computing parameter.",
+        "cpu_div": 2
+    },
+    "debug": {
+        "[docstring]": "Debug configurations.",
+        "print_level": 3
+    },
+    "problem": {
+        "[docstring]": "Formulation of the problem.",
+        "dynamics": {
+            "A": [
+                [0, 1],
+                [0, 0]
+            ],
+            "B": [
+                [0],
+                [1]
+            ],
+            "C": [
+                [0, 1]
+            ],
+            "D": [
+                0
+            ]
+        },
+        "weighing_matrix": {
+            "Q": [
+                [0, 0],
+                [0, 1]
+            ],
+            "R": 1
+        }
+    }
+}
