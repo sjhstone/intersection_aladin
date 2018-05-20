@@ -40,8 +40,8 @@
         },
         "config": {
             "[docstring]": "ALADIN running configurations.",
-            "max_iter": 50,
-            "tol": 1e-8,
+            "max_iter": 150,
+            "tol": 1e-4,
             "copied_gap": 1e-6
         }
     },
